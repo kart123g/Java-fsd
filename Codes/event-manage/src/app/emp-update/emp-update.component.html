@@ -1,0 +1,14 @@
+<div>
+    <form [formGroup]="empRef" (ngSubmit)="updateEmp()">
+        <h2>Update Details</h2>
+        <p>PId {{emp.id}}</p>
+        <!-- <input type="number" placeholder="Enter Employee Id" formControlName="id"/> <br> -->
+        <input type="text" placeholder="Enter First Name " formControlName="first_name"/> <br>
+        <input type="text" placeholder="Enter Last Price " formControlName="last_name"/> <br>
+        <input type="text" placeholder="Enter Email ID " formControlName="email"/> <br>
+        <input type="submit" value="Update Employee" class="btn btn-success"/>
+        <input type="button" value="View All Employee" (click)="ViewAll()"/>
+    </form>
+    <br>
+    <p style="color: red;">{{this.msg}}</p>
+</div>

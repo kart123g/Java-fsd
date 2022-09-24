@@ -1,0 +1,22 @@
+<div  class="d-flex justify-content-center" style="margin-top: 100px;">
+    <form [formGroup]="loginRef" (ngSubmit)="checkUser()" class="mb-3">
+        <div class="mb-2">
+            <label class="form-label">UserName </label>
+            <input type="text" formControlName="user" class="form-control" style="width: 400px;"/><br/>
+        </div>
+        <div class="mb-.5">
+            <label class="form-label">Password </label>
+            <input type="password" formControlName="pass" class="form-control" style="width: 400px;"/><br/>
+        </div>
+        <div style="margin-bottom: 10px;">
+            <span class="form-text" style="color:red;">{{msg}}</span>
+        </div>
+        <div class="ms-1">
+            <input type="submit" value="Submit" class="btn btn-primary"  style="padding:10px 30px 10px 30px;"/>
+            <input type="reset" value="Reset" class="btn btn-primary" style="margin-left: 10px; padding:10px 30px 10px 30px;"/>
+        </div>
+        
+    </form>
+    <br/>
+  </div>
+  
